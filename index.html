@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/estilos.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img class="logo-1" src="img/logo.JPG" alt="A">
+        </nav>
+    </header>
+    <div class="container">
+        <div class="card-encriptar">
+            <div class="text-area">
+                <textarea name="encrip" id="texto" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+                <h6>Solo letras minusculas y sin acentos</h6>
+            </div>
+            <div class="buttom area">
+                <button onclick="encriptarTexto()" class="btn active">Encriptar</button>
+                <button onclick="desencriptarTexto()" class="btn disable">Desemcriptar</button>
+            </div>
+        </div>
+        <div class="card-encriptado">
+            <div class="text-area-2">
+                <textarea class="text-resultado" name="desencrip" id="text-resultado" cols="30" rows="10"></textarea>
+            </div>
+            <img class="img-preview" id="img-resultado" src="img/imgreferen.JPG" alt="IMG-REFERENCIAL">
+            <h3 id="resultado_h3" class="">Ningún mensaje fue encontrado</h3>
+            <h4 id="resultado_h4" class="">Ingresa el texto que desees encriptar o desemcriptar</h4>
+            <button onclick="copiar()" id="btn-copiar" class="btn disable">copiar</button>
+        </div>
+    </div>
+</body>
+<script src="js/logica2.js">
+</script>
+</html>

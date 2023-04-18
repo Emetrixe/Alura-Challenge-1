@@ -1,0 +1,181 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+body{
+    background-color: #F3F5FC;
+    margin: 0px;
+}
+header{
+    width: 120px;
+    position: fixed;
+}
+nav{
+    width: 30%;
+    height: 60px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.logo-1{
+    margin: 20px 0px 0px 50px;
+    width:80px ;
+    height: 48px;
+    border: 0px solid black;
+}
+.card-encriptar{
+    border: 0px solid black;
+    padding: 30px;
+    margin: 120px 50px 0px 150px;
+    height: max-content;
+}
+.text-area textarea{
+    width: 680px;
+    height: 565px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 32px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    color: #0a3871;
+    resize: none;
+}
+
+.text-area textarea:focus{
+    outline: none;
+}
+.card-encriptado{
+    width: 400px;
+    height: 844px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 0px solid black;
+    padding: 0px;
+    margin: 30px 40px 0px 0px;
+    border-radius: 32px;
+    background-color: white;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.1); ;
+}
+.text-resultado{
+    width: 340px;
+    border: 0px solid black;
+    margin: 30px 30px 10px 30px;
+    font-size: 24px;
+    resize: none;
+    color: #495057;
+    font-family: 'Inter', sans-serif;
+}
+.text-area-2 textarea:focus{
+    outline: none;
+}
+.card-encriptado img{
+    width: 286px;
+    height:250px;
+    border: 0px solid black;
+}
+.card-encriptado h3{
+    width:336px ;
+    height:58px ;
+    font-size: 24px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    color: #343A40;
+    margin: 10px 0px 10px 0px;
+}
+.card-encriptado h4{
+    color:#495057;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    margin-bottom: 35px;
+    margin: 10px 0px 20px 0px;
+}
+.card-encriptado button{
+    margin-top: 0px;
+    flex: none;
+    width: 336px;
+    height: 67px;
+    border-radius: 24px;
+    padding: 24px;
+    gap: 8px;
+}
+.active{
+    background-color: #0a3871;
+    color: white;
+    border: 1px solid #0A3871;
+    transition: background-color 0.5s ease;
+}
+.active:hover{
+    background-color: #1d5dac;
+}
+.disable{
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    transition: background-color 0.5s ease;
+}
+.disable:hover{
+    background-color: #0073ff7a; ;
+}
+.btn{
+    flex: none;
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    padding: 24px;
+    gap: 8px;
+}
+.displayoff{
+    display: none;
+}
+.text-active{
+    height: 700px;
+}
+@media(max-width:768px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo-1{
+        margin: 20px 0px 0px 10px;
+    }
+    .card-encriptar{
+        width: 688px;
+        margin: 220px 0px 0px 0px;
+    }
+    .text-area textarea{
+        width: 100%;
+        height: 400px;
+    }
+    .card-encriptado{
+        display: flex;
+        align-items: center;
+        width: 688px;
+        height: 133px;
+        margin: 0px;
+        padding: 20px 0px 20px 0px;
+
+    }
+    .text-area-2 textarea{
+        display: none;
+    }
+    .inactive{
+        display: none;
+    }
+    .card-encriptado img{
+        display: none;
+    }
+    .card-encriptado h3{
+        width: 624px;
+    }
+    .card-encriptado h4{
+        width: 624px;
+        margin: 0px;
+    }
+    .card-encriptado button{
+        display: none;
+    }
+}
